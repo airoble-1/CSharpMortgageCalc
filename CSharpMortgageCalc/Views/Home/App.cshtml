@@ -20,14 +20,14 @@
 						<input type="number" class="form-control" id="lrate" min="1" step=".1" value=@Model.Rate asp-for="Rate" />
 					</div>
 				</div>
-				<button type="submit" class="btn btn-dark mt-2">Calculate</button>
+				<button type="submit" class="btn btn-cfOrange mt-2">Calculate</button>
 			</form>
 		</div>
 		<div class="col">
 			<div id="paymentTitle">
-				<p>Your Monthyl Payments</p>
+				<p>Your Monthly Payments</p>
 			</div>
-			<p class="payment">
+			<p id="payment">
 				@Model.Payment.ToString("C")
 			</p>
 			<div class="row">
